@@ -1,0 +1,708 @@
+Exercise 1
+Problem to solve
+Write a code, which print the words "Hello World"
+
+Output
+Hello World
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 2
+Problem to solve
+Write code which initialize and declare primitive data types with values:
+
+byte -> b = 68
+short -> s = 10000
+int -> i = 2147483647
+long -> l = 822337203
+float -> f = 234.5f
+double -> d = 123.4
+boolean -> bo = true
+string -> st = "Software Development Academy"
+Variables should be printed to standard output
+
+Output
+68
+10000
+2147483647
+822337203
+234.5
+123.4
+true
+Software Development Academy
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 3
+Problem to solve
+Write code which initialize and declare variables of following types: int, long, double.
+
+Assign them following values:
+
+int -> i = 100000000000000000000000
+long -> l = -900000000000000000000000
+double -> d = 100
+Check that code is build properly. What went wrong?
+
+Output
+Error:Error:line (11)java: integer number too large: 100000000000000000000000
+Error:Error:line (12)java: integer number too large: -900000000000000000000000
+Solution
+Follow up with following code
+
+Exercise 4
+Problem to solve
+Write a code, which take integer number from user and print it to standard output. Following message should be displayed "User input X" - where X is the value of number provided by user. Expect that user should input only integer values
+
+Handle user input with Scanner library.
+Perform testing, how the program behaves for data types other than integer.
+Output
+Correct output
+
+Input integer number
+80
+User input value 80
+
+Process finished with exit code 0
+Incorrect output
+
+Input integer number
+SDA
+Exception in thread "main" java.util.InputMismatchException
+    at java.util.Scanner.throwFor(Scanner.java:864)
+    at java.util.Scanner.next(Scanner.java:1485)
+    at java.util.Scanner.nextInt(Scanner.java:2117)
+    at java.util.Scanner.nextInt(Scanner.java:2076)
+    at Excercise4.main(Excercise4.java:19)
+
+Process finished with exit code 1
+Solution
+Follow up with following code
+
+Exercise 5
+Problem to solve
+Write a code, which takes two integer number as an input and then perform math operations
+
+addition
+subtraction
+multiplication
+division
+raising to a power (in that case first argument will be a number raised to power, second argument will be a power number.
+The result of operation should be assigned to newly initialized variable of correct type.
+
+Result should be displayed in correct way on the screen
+
+addition -> "a = A, b = B, results is C"
+subtraction -> "a = A, b = B, results is C"
+multiplication -> "a = A, b = B, results is C"
+division -> "a = A, b = B, results is C"
+raising to a power -> "a = A, raised to power B, gives us C"
+Output
+Input first integer number
+10
+Input second integer number
+20
+a = 10, b = 20, result is  30.0
+a = 10, b = 20, result is -10.0
+a = 10, b = 20, result is 200.0
+a = 10, b = 20, result is 0.0
+a = 10, raised to power 20, gives us 1.0E20
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 6
+Problem to solve
+Write a program, which reads user input, but first print "Password please" on standard output. Password should be displayed on screen. If password equals to = 'secret' then print "Welcome to secret place", otherwise end the program.
+
+Output
+Correct password
+
+Password please 
+secret
+Provided password is secret
+Welcome to secret place.
+
+Process finished with exit code 0
+Incorrect password
+
+Password please 
+let me in
+Provided password is let me in
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 7
+Problem to solve
+Write a program, which reads user input, but first print "What's your name?" on standard output. Name should be displayed on screen. If name equals "John Wick", then print "I see you working again John", otherwise print "Welcome, [xyz]", where [xyz] display the value provided by user
+
+Output
+Correct password
+
+What's your name?
+John Wick
+Provided name John Wick
+I see you working again John
+
+Process finished with exit code 0
+Incorrect password
+
+What's your name?
+Andrew
+Provided name Andrew
+Welcome, Andrew
+Solution
+Follow up with following code
+
+Exercise 8
+Problem to solve
+Write a program which convert temperature provided by user:
+
+from Celsius to Fahrenheit (degrees in Fahrenheit = 1.8 * degrees in Celsius + 32)
+from Fahrenheit to Celsius (degrees in Celsius = (degrees in Fahrenheit - 32 / 1.8))
+from Celsius to Kelvin (degrees in Kelvin = degrees in Celsius + 273.15)
+from Kelvin to Celsius (degrees in Celsius = degrees in Kelvin - 273.15)
+from Kelvin to Fahrenheit (degrees in Fahrenheit = (degrees in Kelvin - 273.15) * 1.8 + 32)
+from Fahrenheit to Kelvin (degrees in Kelvin = ((degrees in Fahrenheit - 32/1.8) + 273.15) Write every convert operation in separate method, which will be executed in main method.
+Output
+Correct password
+
+Input temperature value 
+50
+Celsius to Fahrenheit 90.032
+Fahrenheit to Celsius 10.0
+Celsius to Kelvin 50.0273.15
+Kelvin to Celsius -223.14999999999998
+Kelvin to Fahrenheit -401.6699999999999632
+Fahrenheit to Kelvin 10.0273.15
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 9
+Problem to solve
+Write a program, which print on standard output following text "This is message in loop" for 5 times.
+
+Output
+This is message from loop
+This is message from loop
+This is message from loop
+This is message from loop
+This is message from loop
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 10
+Problem to solve
+Modify code from previous exercise, user should have possibility to input number of messages dispayed on the screen
+
+Output
+How many messages? 
+7
+This is message in loop
+This is message in loop
+This is message in loop
+This is message in loop
+This is message in loop
+This is message in loop
+This is message in loop
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 11
+Problem to solve
+Write a program, which take an input from user. Program should ask for password until user provide the correct password In case user provide correct password, it should print "Correct password", otherwise, password should be displayed on screen and user should have possibility to input password again.
+
+Output
+Correct Password
+
+Password please: 
+secretpassword
+Correct password
+
+Process finished with exit code 0
+Incorrect password
+
+Password please: 
+let me in
+Incorrect password
+Password please: 
+LET ME IN
+Incorrect password
+Password please: 
+that was a joke, let me in
+Incorrect password
+Password please: 
+secretpassword
+Correct password
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 12
+Problem to solve
+Write a program, which take an input from user - positive, integer number. Then program should display all odd numbers not greater than number provided by user.
+
+Output
+Input a number: 
+54
+Odd number 1
+Odd number 3
+Odd number 5
+Odd number 7
+Odd number 9
+Odd number 11
+Odd number 13
+Odd number 15
+Odd number 17
+Odd number 19
+Odd number 21
+Odd number 23
+Odd number 25
+Odd number 27
+Odd number 29
+Odd number 31
+Odd number 33
+Odd number 35
+Odd number 37
+Odd number 39
+Odd number 41
+Odd number 43
+Odd number 45
+Odd number 47
+Odd number 49
+Odd number 51
+Odd number 53
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 13
+Problem to solve
+Write a program which creates the array for 10 values, integer type. Program should populate values in array with a random numbers from [-10..10]. Then:
+
+print array and it's values
+print minimum value from array
+print maximum value from array
+Output
+Value from array: 9
+Value from array: 3
+Value from array: 9
+Value from array: 7
+Value from array: 8
+Value from array: 3
+Value from array: 4
+Value from array: 6
+Value from array: 1
+Value from array: 9
+Max is: 9
+Min is: 1
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 14
+Problem to solve
+Write a program, which print multiplication table, based on range provided by user. As an input program should take two integer values.
+
+Output
+Enter range of numbers to print their multiplication tables
+10
+10
+Multiplication table of 10
+10*1 = 10
+10*2 = 20
+10*3 = 30
+10*4 = 40
+10*5 = 50
+10*6 = 60
+10*7 = 70
+10*8 = 80
+10*9 = 90
+10*10 = 100
+Solution
+Follow up with following code
+
+Exercise 15
+Problem to solve
+Write a program, which takes an number from user and display it reversed:
+
+for 1234, program should return 4321
+for 654789, program should return 987456
+Output
+What number should I reverse?
+123456789
+Reversed number: 987654321
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 16
+Problem to solve
+The online store offers installment sale. Write a program calculating the monthly installment for the purchased tower. Input data for the program are:
+
+the price of the goods (from $ 100 to $ 10,000)
+number of installments (from 6 to 48).
+The loan bears interest depending on the number of installments:
+
+from 6-12 is 2.5%,
+from 13-24 is 5%,
+from 25-48 is 10%.
+The user indicates the number of installments and the amount lent.
+
+Output
+Input Installment number: 
+12
+Input loan amount: 
+40000
+3416.666666666667
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 17
+Problem to solve
+Analyze below code, this code use method fizzBuzz, which as an input take integer number. Then three conditions are checked:
+
+number divisible by 3 printout of the word "fizz"
+number divisible by 5 printout of the word "buzz"
+number divisible by 3 and 5 printout of the word "fizzbuzz"
+The program have errors - it does not compile, correct the errors and test if the program works correctly for values provided by the user.
+
+Code to analyze
+import java.util.Scanner;
+
+public class Exercise17 {
+    public static void main(String[] args)
+        Scanner readNumber = new Scanner(System.in);
+        System.out.println("Input a number: ");
+        int number = readNumber.nextInt();
+        String fizzBuzzResult = fizzBuzz(number);
+        System.out.println();
+}
+
+    public static String fizzBuzz(int number) {
+        if (number % 5 == 0) {
+            if (number % 3 == 0) {
+                return "fizzbuzz"
+            } else {
+                return "fizz"; }
+        } else if (number % 5 == 0) {
+            return "buzz";
+        }
+        return String.valueOf(number); }
+}
+Output
+Actual
+
+    Error:Error:line (12)java: ';' expected
+    Error:Error:line (14)java: <identifier> expected
+    Error:Error:line (14)java: illegal start of type
+    Error:Error:line (17)java: <identifier> expected
+    Error:Error:line (20)java: class, interface, or enum expected
+    Error:Error:line (25)java: class, interface, or enum expected
+    Error:Error:line (28)java: class, interface, or enum expected
+    Error:Error:line (29)java: class, interface, or enum expected
+For input 20
+
+Input a number: 
+20
+buzz
+For input 15:
+
+Input a number: 
+15
+fizzbuzz
+
+Process finished with exit code 0
+For input 9:
+
+Input a number: 
+9
+fizz
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 18
+Problem to solve
+The following code prints a list of participants of the Software Development Academy course in the TestInt256 group There are 15 students on the list, unfortunately the program prints only 11 records. Correct the following code to print out the correct number of participants.
+
+Code to analyze
+public class Exercise18 {
+    public static void main(String[] args){
+
+        String[] participantList = new String[15];
+        participantList[0] = "Louis Kennedy";
+        participantList[1] = "Blake Baker";
+        participantList[2] = "Jacob Campbell";
+        participantList[3] = "Arthur Green";
+        participantList[5] = "Caleb Willis";
+        participantList[5] = "Heath Rasmussen";
+        participantList[6] = "Lara Malinowska";
+        participantList[7] = "Kase Knapp";
+        participantList[7] = "Avery Livingston";
+        participantList[9] = "Armando Zamora";
+        participantList[10] = "Skye Hunt";
+        participantList[11] = "Gale Carr";
+        participantList[12] = "Gabe Collins";
+        participantList[13] = "Mel Pruitt";
+        participantList[14] = "Jess Owen";
+
+        for (int i = 0; 11 > i; i++ ) {
+            System.out.println("Participant nr " + i + " is " + participantList[i]);
+        }
+    }
+}
+Output
+Actual
+
+Participant nr 0 is Louis Kennedy
+Participant nr 1 is Blake Baker
+Participant nr 2 is Jacob Campbell
+Participant nr 3 is Arthur Green
+Participant nr 4 is null
+Participant nr 5 is Heath Rasmussen
+Participant nr 6 is Lara Malinowska
+Participant nr 7 is Avery Livingston
+Participant nr 8 is null
+Participant nr 9 is Armando Zamora
+Participant nr 10 is Skye Hunt
+Correct
+
+Participant nr 0 is Louis Kennedy
+Participant nr 1 is Blake Baker
+Participant nr 2 is Jacob Campbell
+Participant nr 3 is Arthur Green
+Participant nr 4 is Caleb Willis
+Participant nr 5 is Heath Rasmussen
+Participant nr 6 is Lara Malinowska
+Participant nr 7 is Kase Knapp
+Participant nr 8 is Avery Livingston
+Participant nr 9 is Armando Zamora
+Participant nr 10 is Skye Hunt
+Participant nr 11 is Gale Carr
+Participant nr 12 is Gabe Collins
+Participant nr 13 is Mel Pruitt
+Participant nr 14 is Jess Owen
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 19
+Problem to solve
+The following program should print the Christmas tree to the screen as follows
+
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+    *************
+   ***************
+  *****************
+ *******************
+
+Process finished with exit code 0
+The program does not work properly and prints the tree in reverse order, correct the errors so that the program works correctly.
+
+Code to analyze
+public class Exercise19 {
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10 - i; j++)
+                System.out.print("*");
+            for (int k = 0; k < (2 * i + 1); k++)
+                System.out.print(" ");
+            System.out.println();
+        }
+    }
+}
+Output
+Actual
+
+********** 
+*********   
+********     
+*******       
+******         
+*****           
+****             
+***               
+**                 
+*                   
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 20
+Problem to solve
+Write a calculator which as an input takes
+
+two numbers
+math operator (allowed +, -, *, /)
+And display the result of operation on standard output
+
+Output
+Addition
+
+Enter two numbers: 2
+3
+Enter an operator (+, -, *, /): +
+2.0 + 3.0 = 5.0
+Process finished with exit code 0
+Subtraction
+
+Enter two numbers: 10
+20
+Enter an operator (+, -, *, /): -
+10.0 - 20.0 = -10.0
+Process finished with exit code 0
+Multiplication
+
+Enter two numbers: 30
+100
+Enter an operator (+, -, *, /): *
+30.0 * 100.0 = 3000.0
+Process finished with exit code 0
+Division
+
+Enter two numbers: 9
+2
+Enter an operator (+, -, *, /): /
+9.0 / 2.0 = 4.5
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 21
+Problem to solve
+Write a program which checks that number/string input by user is a palindrome Palindrome description: Follow with hints:
+
+Get the number to check for palindrome
+Hold the number in temporary variable
+Reverse the number
+Compare the temporary number with reversed number
+If both numbers are same, print "palindrome number"
+Else print "not palindrome number"
+Output
+Is Palindrome
+
+Enter a string/number to check if it is a palindrome
+madam
+Entered string/number is a palindrome.
+
+Process finished with exit code 0
+Not a Palindrome
+
+Enter a string/number to check if it is a palindrome
+palindrome
+Entered string/number isn't a palindrome.
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 22
+Problem to solve
+Write a program which check that two strings are equal to each other. User provides the strings values using standard input. Program should return True if objects are equal, false otherwise.
+
+Output
+Are equals
+
+
+Not equal
+
+Input first string
+Test
+Input second string
+tEST
+Comparing Test and tEST
+Comparison result: false
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 23
+Problem to solve
+Write a program which extracts the string value from specific range. As an input program should take the input string and two numbers beginning and end of range.
+
+Output
+Are equals
+
+
+Not equal
+
+Input a string which will be extracted 
+Software Development Academy
+Input first number in range 
+0
+Input second number in range 
+9
+String for extract the characters is: Software Development Academy
+Extracted value: Software 
+
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 24
+Problem to solve
+Write a program in which you create a class called Date, that class shpuld contains three types of information:
+
+day (int)
+month (int)
+year (int)
+Class should have a constructor which initializes instances of variables. We assume that values are correct. Create set and get method for each instanced variable. Create method which displayDate - that displays day, month and year separated by forward slash (/). Write test app which show capabilities of created class.
+
+Output
+Enter The Month
+10
+Enter the Date
+02
+Enter the Year
+1998
+Day: 10
+Month: 10
+Year: 1998
+Print Completed Date
+10/2/1998
+Process finished with exit code 0
+Solution
+Follow up with following code
+
+Exercise 25
+Problem to solve
+Create class SavingsAccount. Use static variable called annualInterestRate to store the annual interest rate for all account holders. Each object of the class contains a private instance variable savingsBalance which indicate the amount the saver currently has ondeposit. Provide method calculateMonthlyInterest to calculate the monthly interest by multiplying the savingsBalance by annualInterestRate divided by 12 this interest should be added to savingsBalance. Provide a static method modifyInterestRate that sets the annualInterestRate to a new value. Write test app which test class SavingsAccount. Create two instances of savingsAccount objects, saver1 and saver2, with balances of $1000.00 and $2000.00. Set annualInterestRate to 4%, then calculate the monthly interest and print the new balances for both savers. Then set the annualInterestRate to 5%, calculate the next month’s interest and print the new balances for both savers.
+
+Output
+New Balance for Saver1= 1003.3333333333334
+New Balance for Saver2= 2006.6666666666667
+New Balance for Saver1= 1007.5138888888889
+New Balance for Saver2= 2015.0277777777778
+
+Process finished with exit code 0
+Solution
+Follow up with following code
